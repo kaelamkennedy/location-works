@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>41.454304, -71.343310	</title>
+	<link rel="icon" type="image/x-icon" href="CoveFavicon-01.png">
+
+
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		@font-face {
+			font-family: "Halyard";
+			src: url();
+		}
+		body {
+			font-family: sans-serif;
+			color: white;
+			margin: 0;
+			padding: 0;
+			/* this is the beach image */
+			/* background-image: url("landscapesandzoom.jpg");  */
+			background-size: cover;
+		}
+		.container {
+			width: 100vw;
+			height: 100vh;
+			position: relative;
+			overflow: hidden;
+		}
+		.lines {
+			width: 100vw;
+			height: 100vh;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: .5fr 1fr 2fr 2fr 2fr 2fr 3fr 2fr 2fr 2fr 2fr 1fr .5fr; /* set how tall each row of lines is relative to each other */
+			z-index: 9;
+			padding: 80px;
+            filter: blur(.5px);
+		
+		}
+		.row {
+			display: flex;
+		}
+		.row div {
+			flex-grow: 1; /* this makes the rectangles fill up the whole line */
+			transition: .5s; /* this is what causes things to smoothly animate */
+		}
+		.box {
+			cursor: pointer;
+		}
+
+		/* ACTIVATED RECTANGLE CLASSES */
+		.row1-active {
+			opacity: .45;
+			filter: blur(10px);
+			cursor: unset !important;
+		}
+		.row2-active {
+			opacity: .45;
+            filter: blur(10px);
+			cursor: unset !important;
+		}
+		.row3-active {
+			opacity: .45;
+            filter: blur(10px);
+			cursor: unset !important;
+		}
+		.row4-active {
+			opacity: .45;
+            filter: blur(10px);
+			cursor: unset !important;
+		}
+		.row5-active {
+			opacity: .45;
+            filter: blur(10px);
+			cursor: unset !important;
+		}
+        .row6-active {
+			opacity: .45;
+            filter: blur(10px);
+			cursor: unset !important;
+		}
+        .row7-active {
+			opacity: .45;
+            filter: blur(10px);
+			cursor: unset !important;
+		}
+        .row8-active {
+			opacity: .45;
+            filter: blur(10px);
+			cursor: unset !important;
+		}
+        .row9-active {
+			opacity: .45;
+            filter: blur(10px);
+			cursor: unset !important;
+		}
+        .row10-active {
+			opacity: .45;
+            filter: blur(10px);
+			cursor: unset !important;
+		}
+        .row11-active {
+            opacity: .45;
+            filter: blur(10px);
+			cursor: unset !important;
+    	}
+        .row12-active {
+			opacity: .45;
+            filter: blur(10px);
+			cursor: unset !important;
+		}
+        .row13-active {
+			opacity: .45;
+            filter: blur(10px);
+			cursor: unset !important;
+		}
+
+		.text-top {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			position: absolute;
+			top: 0;
+			width: 100vw;
+			padding: 20px 80px;
+		}
+		.text-bottomd {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			position: absolute;
+			bottom: 0;
+			width: 100vw;
+			padding: 20px 80px;
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<video autoplay muted loop id="myVideo">
+			<source src="LONGWATER.mp4" type="video/mp4">
+		</video>
+
+		<div class="text-top">
+			<p>every time I visit the cove</p>
+			<p style="text-align: center;">the vibrancy of color overwhelms me</p>
+			<p style="text-align: right;">the life at the intersection of water and land</p>
+		</div>
+
+		<div class="text-bottom">
+			<p>text1</p>
+			<p style="text-align: center;">text2</p>
+			<p style="text-align: right;">text3</p>
+		</div>
+		
+		
+		
+		<!-- LINES OF RECTANGLES -->
+
+		<div class="lines">
+
+			<!-- Row 1: Stone -->
+			<div class="row">
+				<div class="box" style="background-color: #130e17;" onclick="row1(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #100a19;" onclick="row1(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #131425;" onclick="row1(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #1b2032;" onclick="row1(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #303241;" onclick="row1(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #4d524d;" onclick="row1(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #66645c;" onclick="row1(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #6e6958;" onclick="row1(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #95907f;" onclick="row1(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #91968f;" onclick="row1(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #c4cac1;" onclick="row1(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #d5d9d3;" onclick="row1(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #c4cac1;" onclick="row1(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #91968f;" onclick="row1(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #95907f;" onclick="row1(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #6e6958;" onclick="row1(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #66645c;" onclick="row1(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #4d524d;" onclick="row1(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #303241;" onclick="row1(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #1b2032;" onclick="row1(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #131425;" onclick="row1(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #100a19;" onclick="row1(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #130e17;" onclick="row1(this)"></div>
+			</div>
+
+
+			<!-- Row 2: Pools -->
+			<div class="row">
+				<div class="box" style="background-color: #211b35;" onclick="row2(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #343253;" onclick="row2(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #395069;" onclick="row2(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #415c6f;" onclick="row2(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #4c6680;" onclick="row2(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #698088;" onclick="row2(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #7886b7;" onclick="row2(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #9fb5d4;" onclick="row2(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #b4d1dc;" onclick="row2(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #cbd6dc;" onclick="row2(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #f0efee;" onclick="row2(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #f0efee;" onclick="row2(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #cbd6dc;" onclick="row2(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #b4d1dc;" onclick="row2(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #9fb5d4;" onclick="row2(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #7886b7;" onclick="row2(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #698088;" onclick="row2(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #4c6680;" onclick="row2(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #415c6f;" onclick="row2(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #395069;" onclick="row2(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #343253;" onclick="row2(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #211b35;" onclick="row2(this)"></div>
+			</div>
+
+			<!-- Row 3: Rock Strata -->
+			<div class="row">
+				<div class="box" style="background-color: #413337;" onclick="row3(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #5e5352;" onclick="row3(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #6e6461;" onclick="row3(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #656b5c;" onclick="row3(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #969d86;" onclick="row3(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #a29b93;" onclick="row3(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #a0a79b;" onclick="row3(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #beceb6;" onclick="row3(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #d0dac9;" onclick="row3(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #ede3cc;" onclick="row3(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #f4f2e5;" onclick="row3(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #ede3cc;" onclick="row3(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #d0dac9;" onclick="row3(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #beceb6;" onclick="row3(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #a0a79b;" onclick="row3(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #a29b93;" onclick="row3(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #969d86;" onclick="row3(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #656b5c;" onclick="row3(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #6e6461;" onclick="row3(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #5e5352;" onclick="row3(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #413337;" onclick="row3(this)"></div>
+			</div>
+
+			<!-- Row 4: Flotsam & Getsam -->
+			<div class="row">
+				<div class="box" style="background-color: #40474b;" onclick="row4(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #776349;" onclick="row4(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #776c69;" onclick="row4(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #9c9598;" onclick="row4(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #a29b93;" onclick="row4(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #a0a79b;" onclick="row4(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #c4af9d;" onclick="row4(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #dba67c;" onclick="row4(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #dcc99e;" onclick="row4(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #ede8cd;" onclick="row4(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #ede8cd;" onclick="row4(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #dcc99e;" onclick="row4(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #dba67c;" onclick="row4(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #c4af9d;" onclick="row4(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #a0a79b;" onclick="row4(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #a29b93;" onclick="row4(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #9c9598;" onclick="row4(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #776c69;" onclick="row4(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #776349;" onclick="row4(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #40474b;" onclick="row4(this)"></div>
+			</div>
+
+			<!-- Row 5: Seaweed Scraps -->
+			<div class="row">
+				<div class="box" style="background-color: #7a3b36;" onclick="row5(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #8e4543;" onclick="row5(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #894d41;" onclick="row5(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #6e6430;" onclick="row5(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #8b7b1b;" onclick="row5(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #7e8c3e;" onclick="row5(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #b7b95a;" onclick="row5(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #cdc78d;" onclick="row5(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #ddc09d;" onclick="row5(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #efd2c3;" onclick="row5(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #ddc09d;" onclick="row5(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #cdc78d;" onclick="row5(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #b7b95a;" onclick="row5(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #7e8c3e;" onclick="row5(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #8b7b1b;" onclick="row5(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #6e6430;" onclick="row5(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #894d41;" onclick="row5(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #8e4543;" onclick="row5(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #7a3b36;" onclick="row5(this)"></div>
+			</div>
+
+			<!-- Row 6: Slimy Sea Moss -->
+			<div class="row">
+				<div class="box" style="background-color: #71481e;" onclick="row6(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #737018;" onclick="row6(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #6f8622;" onclick="row6(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #628c25;" onclick="row6(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #7ba62b;" onclick="row6(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #b0cf55;" onclick="row6(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #d2e75a;" onclick="row6(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #c6dd8e;" onclick="row6(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #eaf2c1;" onclick="row6(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #eaf2c1;" onclick="row6(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #c6dd8e;" onclick="row6(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #d2e75a;" onclick="row6(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #b0cf55;" onclick="row6(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #7ba62b;" onclick="row6(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #628c25;" onclick="row6(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #6f8622;" onclick="row6(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #737018;" onclick="row6(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #71481e;" onclick="row6(this)"></div>
+			</div>
+
+			<!-- Row 7: Crab Claw -->
+			<div class="row"> 
+				<div class="box" style="background-color: #554052;" onclick="row7(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #66535b;" onclick="row7(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #9e938e;" onclick="row7(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #d1cdda;" onclick="row7(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #eced91;" onclick="row7(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #e4bc71;" onclick="row7(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #f2ab3e;" onclick="row7(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #f49e29;" onclick="row7(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #f7831b;" onclick="row7(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #f49e29;" onclick="row7(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #f2ab3e;" onclick="row7(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #e4bc71;" onclick="row7(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #eced91;" onclick="row7(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #d1cdda;" onclick="row7(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #9e938e;" onclick="row7(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #66535b;" onclick="row7(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #554052;" onclick="row7(this)"></div>
+			</div>
+
+			<!-- Row 8: Slimy Sea Moss -->
+			<div class="row">
+				<div class="box" style="background-color: #71481e;" onclick="row8(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #737018;" onclick="row8(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #6f8622;" onclick="row8(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #628c25;" onclick="row8(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #7ba62b;" onclick="row8(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #b0cf55;" onclick="row8(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #d2e75a;" onclick="row8(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #c6dd8e;" onclick="row8(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #eaf2c1;" onclick="row8(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #eaf2c1;" onclick="row8(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #c6dd8e;" onclick="row8(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #d2e75a;" onclick="row8(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #b0cf55;" onclick="row8(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #7ba62b;" onclick="row8(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #628c25;" onclick="row8(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #6f8622;" onclick="row8(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #737018;" onclick="row8(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #71481e;" onclick="row8(this)"></div>
+			</div>
+
+			<!-- Row 9: Seaweed Scraps -->
+			<div class="row">
+				<div class="box" style="background-color: #7a3b36;" onclick="row9(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #8e4543;" onclick="row9(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #894d41;" onclick="row9(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #6e6430;" onclick="row9(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #8b7b1b;" onclick="row9(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #7e8c3e;" onclick="row9(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #b7b95a;" onclick="row9(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #cdc78d;" onclick="row9(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #ddc09d;" onclick="row9(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #efd2c3;" onclick="row9(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #ddc09d;" onclick="row9(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #cdc78d;" onclick="row9(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #b7b95a;" onclick="row9(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #7e8c3e;" onclick="row9(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #8b7b1b;" onclick="row9(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #6e6430;" onclick="row9(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #894d41;" onclick="row9(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #8e4543;" onclick="row9(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #7a3b36;" onclick="row9(this)"></div>
+			</div>
+
+			<!-- Row 10: Flotsam & Getsam-->
+			<div class="row">
+				<div class="box" style="background-color: #40474b;" onclick="row10(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #776349;" onclick="row10(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #776c69;" onclick="row10(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #9c9598;" onclick="row10(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #a29b93;" onclick="row10(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #a0a79b;" onclick="row10(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #c4af9d;" onclick="row10(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #dba67c;" onclick="row10(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #dcc99e;" onclick="row10(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #ede8cd;" onclick="row10(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #ede8cd;" onclick="row10(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #dcc99e;" onclick="row10(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #dba67c;" onclick="row10(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #c4af9d;" onclick="row10(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #a0a79b;" onclick="row10(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #a29b93;" onclick="row10(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #9c9598;" onclick="row10(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #776c69;" onclick="row10(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #776349;" onclick="row10(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #40474b;" onclick="row10(this)"></div>
+			</div>
+
+			<!-- Row 11: Rock Strata -->
+			<div class="row">
+				<div class="box" style="background-color: #413337;" onclick="row11(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #5e5352;" onclick="row11(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #6e6461;" onclick="row11(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #656b5c;" onclick="row11(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #969d86;" onclick="row11(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #a29b93;" onclick="row11(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #a0a79b;" onclick="row11(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #beceb6;" onclick="row11(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #d0dac9;" onclick="row11(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #ede3cc;" onclick="row11(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #f4f2e5;" onclick="row11(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #ede3cc;" onclick="row11(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #d0dac9;" onclick="row11(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #beceb6;" onclick="row11(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #a0a79b;" onclick="row11(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #a29b93;" onclick="row11(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #969d86;" onclick="row11(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #656b5c;" onclick="row11(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #6e6461;" onclick="row11(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #5e5352;" onclick="row11(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #413337;" onclick="row11(this)"></div>
+			</div>
+
+			<!-- Row 12: Pool -->
+			<div class="row">
+				<div class="box" style="background-color: #211b35;" onclick="row12(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #343253;" onclick="row12(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #395069;" onclick="row12(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #415c6f;" onclick="row12(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #4c6680;" onclick="row12(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #698088;" onclick="row2(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #7886b7;" onclick="row12(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #9fb5d4;" onclick="row12(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #b4d1dc;" onclick="row12(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #cbd6dc;" onclick="row12(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #f0efee;" onclick="row12(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #f0efee;" onclick="row12(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #cbd6dc;" onclick="row12(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #b4d1dc;" onclick="row12(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #9fb5d4;" onclick="row12(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #7886b7;" onclick="row12(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #698088;" onclick="row12(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #4c6680;" onclick="row12(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #415c6f;" onclick="row12(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #395069;" onclick="row12(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #343253;" onclick="row12(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #211b35;" onclick="row12(this)"></div>
+			</div>
+
+			<!-- Row 13: Stone -->
+			<div class="row">
+				<div class="box" style="background-color: #130e17;" onclick="row13(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #100a19;" onclick="row13(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #131425;" onclick="row13(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #1b2032;" onclick="row13(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #303241;" onclick="row13(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #4d524d;" onclick="row13(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #66645c;" onclick="row13(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #6e6958;" onclick="row13(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #95907f;" onclick="row13(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #91968f;" onclick="row13(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #c4cac1;" onclick="row13(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #d5d9d3;" onclick="row13(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #c4cac1;" onclick="row13(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #91968f;" onclick="row13(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #95907f;" onclick="row13(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #6e6958;" onclick="row13(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #66645c;" onclick="row13(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #4d524d;" onclick="row13(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #303241;" onclick="row13(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #1b2032;" onclick="row13(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #131425;" onclick="row13(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #100a19;" onclick="row13(this)"></div>
+				<div></div>
+				<div class="box" style="background-color: #130e17;" onclick="row13(this)"></div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<!-- JAVASCRIPT FUNCTIONS BELOW! -->
+
+	<script>
+		function row1(targetDiv) {
+			targetDiv.classList.add("row1-active");
+		}
+		function row2(targetDiv) {
+			targetDiv.classList.add("row2-active");
+		}
+		function row3(targetDiv) {
+			targetDiv.classList.add("row3-active");
+		}
+		function row4(targetDiv) {
+			targetDiv.classList.add("row4-active");
+		}
+		function row5(targetDiv) {
+			targetDiv.classList.add("row5-active");
+		}
+        function row6(targetDiv) {
+			targetDiv.classList.add("row6-active");
+		}
+        function row7(targetDiv) {
+			targetDiv.classList.add("row7-active");
+		}
+        function row8(targetDiv) {
+			targetDiv.classList.add("row8-active");
+		}
+        function row9(targetDiv) {
+			targetDiv.classList.add("row9-active");
+		}
+        function row10(targetDiv) {
+			targetDiv.classList.add("row10-active");
+		}
+        function row11(targetDiv) {
+			targetDiv.classList.add("row11-active");
+		}
+        function row12(targetDiv) {
+			targetDiv.classList.add("row12-active");
+		}
+        function row13(targetDiv) {
+			targetDiv.classList.add("row13-active");
+		}
+	</script>
+</body>
+</html>
