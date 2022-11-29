@@ -55,6 +55,10 @@
 		.box {
 			cursor: pointer;
 		}
+		video {
+			position: absolute;
+			z-index: -1;
+		}
 
 		/* ACTIVATED RECTANGLE CLASSES */
 		.row1-active {
@@ -131,13 +135,24 @@
 			width: 100vw;
 			padding: 20px 80px;
 		}
-		.text-bottomd {
+		.text-bottom {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr;
 			position: absolute;
 			bottom: 0;
 			width: 100vw;
 			padding: 20px 80px;
+		}
+		@media only screen and (max-width: 600px) {
+			.lines {
+				padding: 40px;
+			}
+			.text-top {
+				display: none;
+			}
+			.text-bottom {
+				display: none;
+			}
 		}
 
 
@@ -147,7 +162,7 @@
 <body>
 
 	<div class="container">
-		<video autoplay muted loop id="myVideo">
+		<video autoplay muted defaultMuted loop id="myVideo" autoplay="autoplay" playsinline  oncontextmenu="return false;" preload="auto">
 			<source src="LONGWATER.mp4" type="video/mp4">
 		</video>
 
