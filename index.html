@@ -4,11 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Geographic sentiment? Place Poetics? </title>
+    <link rel="icon" type="image/x-icon" href="IndexFavicon.png">
 </head>
+
+<style>
+
+@font-face {
+    font-family: Bradford;
+    src: url(BradfordLL-Light.woff);
+}
+
+@font-face {
+    font-family: Monument;
+    src: url(MonumentGrotesk-Regular.woff)
+}
+
+body {
+		font-family: Bradford;
+		color: white;
+		margin: 30px;
+        padding: 30px;
+		background-size: cover;
+        background-color: #c9c584;
+	}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #c9c584;
+  padding: 30px;
+}
+
+a {
+  color: #7174af;
+}
+
+.grid-item {
+  background-color: #c9c584;
+  border: 0px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
+
+
 <body>
-    <a href="cove-site">Cove Site</a>
-    <a href="pond-site">Pond Site</a>
-    <a href="woods-site">Woods Site</a>
+
+    <div class="grid-container">
+        <div class="grid-item">11.25.22</div>
+        <div class="grid-item"><a href="cove-site">41.454304, -71.343310</a></div>
+        <div class="grid-item">11.29.22</div>  
+        <div class="grid-item"><a href="pond-site">41.462095, -71.326674</a></div>
+        <div class="grid-item">12.03.22</div>
+        <div class="grid-item"><a href="woods-site">41.895110, -71.433297</a></div>  
+     
+      </div>
 </body>
 </html>
