@@ -20,26 +20,36 @@
         src: url(MonumentGrotesk-Regular.woff);
     }
 
+    @font-face {
+        font-family: Mad-Sans;
+        src: url(MAD-Sans-Regular.otf);
+    }
+
     body {
 		font-family: Bradford-Light;
-		color: #f0efee;
-		margin: 50px;
-        padding: 50px;
-		/* this is the beach image */
+		color: #a6ac88;
+		margin: 5px;
+        padding: 5px;
 		background-image: url("grass-background.png"); 
 		background-size: cover;
 	}
 
-    div {
-        font-family: Bradford-Light;
-    }
-
     h1 {
-        font-family: Monument;
-        color:#f0efee;
-        margin-left: 20px;
+        font-family: Mad-Sans;
+        font-size: 7vw;
+        color: #c9c584;
+        margin: 50px;
+        padding: 50px;
+        text-align: center;
+        opacity: .5;
+        margin-left: 3vw;
     }
 
+    p{
+        font-family: Monument;
+        font-weight: 100;
+        text-align: center;
+    }
     .dot {
         height: 200px;
         width: 200px;
@@ -54,20 +64,26 @@
 </head>
 
 <body>
-    <h1>hello! </h1>
+
+
+    <br><br>
+    <h1>this road cuts <br> through a pond.
+        <br><br>
+        On either side, only a few feet separate you from the water below.
+        <br><br>
+    </h1>
 
     <div>
-        <p> Pretty road cuts through a pond. 
             <br>
-            On either side of the road, only a few feet separate you from the deceptively deep water below. </p>
+             </p>
     </div>
 
-    
-    <div style="text-align:center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div>
+
 </body>
 </html>
+
+<script>
+
+    <button onclick="myFunction()">Click me</button>
+
+</script>

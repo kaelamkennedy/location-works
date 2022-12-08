@@ -4,62 +4,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geographic sentiment? Place Poetics? </title>
+    <title>Site-Specified</title>
     <link rel="icon" type="image/x-icon" href="IndexFavicon.png">
-</head>
+
+
 
 <style>
 
-@font-face {
-    font-family: Bradford;
-    src: url(BradfordLL-Light.woff);
-}
+  :root {
+    --peagreen: #c9c584;
+  }
+  
+  * {
+    cursor: crosshair;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+      font-family: Bradford;
+      src: url("BradfordLL-Light.woff");
+  }
+  
+  @font-face {
+    font-family: Bradford-Italic;
+    src: url("BradfordLL-LightItalic.otf")
+  }
+  
+  @font-face {
+      font-family: Monument;
+      src: url("MonumentGrotesk-Regular.woff")
+  }
+  
+  .title {
+    font-family:Monument;
+    font-size: 10vw;
+    line-height: 1.6em;
+    color: #c9c5d2;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: flex-end;
+    z-index: -1;
+  }
+  .title h1 {
+    padding-bottom: 2vw;
+  }
+  
+  
+  
+  body {
+      font-family: Bradford;
+      color: white;
+      font-size: small;
+      background-size: cover;
+      background-color: var(--peagreen);
+    }
 
-@font-face {
+  .description {
+    text-align: left;
+    padding-left: 60vw;
+    font-size: 20px;
+    line-height: 2.2rem;
+  }  
+
+    .parent {
+      height: 100vh;
+      width: 100vw;
+      position: relative;
+      font-size: 30px;
+      padding: 40px;
+    }
+  
+  
+  .grid-container {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+    width: 100%;
+    margin-left: 3rem;
+    font-size: 15px;
+    text-align: left;
+    gap: 25px;
+    left: 10vw;
+    bottom: 15vw;
+    }
+  .grid-container h2 {
     font-family: Monument;
-    src: url(MonumentGrotesk-Regular.woff)
-}
+    font-size: 25px;
+  }  
+  
+  a:link {
+    color: green;
+  }
+  
+  a:visited {
+    color: green;
+  }
+  
+  a:hover {
+    color: #c9c5d2;
+  }
 
-body {
-		font-family: Bradford;
-		color: white;
-		margin: 30px;
-        padding: 30px;
-		background-size: cover;
-        background-color: #c9c584;
-	}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  background-color: #c9c584;
-  padding: 30px;
-}
-
-a {
-  color: #7174af;
-}
-
-.grid-item {
-  background-color: #c9c584;
-  border: 0px;
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-</style>
+  
+  
+  
+  </style>
+</head>
 
 
 <body>
+  <div class="parent">
+    <div class="title">
+        <h1>Site-<br>Specified</h1>
+    </div>  
 
-    <div class="grid-container">
-        <div class="grid-item">11.25.22</div>
-        <div class="grid-item"><a href="cove-site">41.454304, -71.343310</a></div>
-        <div class="grid-item">11.29.22</div>  
-        <div class="grid-item"><a href="pond-site">41.462095, -71.326674</a></div>
-        <div class="grid-item">12.03.22</div>
-        <div class="grid-item"><a href="woods-site">41.895110, -71.433297</a></div>  
-     
+
+      <div class="grid-container">
+        <h2>time</h2>
+        <h2>place</h2>
+        <p>∞</p>
+        <p><a href="https://kaelamkennedy.github.io/location-works/cove-site/">preface</a></p>
+        <p>11.25.22</p>
+        <p><a href="https://kaelamkennedy.github.io/location-works/cove-site/">41.454304"N,-71.343310"W</a></p>
+        <p>12.04.22</p>  
+        <p><a href="pond-site">41.462095"N, -71.326674"W</a></p>
+       <!-- <p>12.03.22</p>
+        <p><a href="woods-site">41.895110"N, -71.433297"W</a></p> -->
       </div>
+
+    
+
+  <div class="description">   
+    
+      This place is new to you, but you have imagined before. Maybe you have spent time in a place just like it. Sometimes, something new can feel like a memory. This project is an ongoing exploration of how we experience environments and communicate space. 
+      <br>
+      <br>
+      Somewhere in between an atlas, an archive, and a sketchbook, Site-Specified is a collection of digital spaces that are expressions of existing ecological locations. These spaces are identified only by their geographic coordinates. Ecological spaces can feel familiar , personal, and universal at the same time. I hope I can share the way the places feel with you. Allowing these places to find a universal location online is a way of sharing and preserving their essence.
+      <br>
+      <br>
+      This project was made possible with  help from <a href="https://www.gabrieldrozdov.com/">Gabriel Drozdov. </a> This site is set in Monument Grotesk by Dinamo and Bradford by Lineto, and was created at the Rhode Island School of Design. 
+    
+  </div>  
+  
+  </div>
+
+
 </body>
 </html>
